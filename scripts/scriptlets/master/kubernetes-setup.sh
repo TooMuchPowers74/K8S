@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/Raspberry-Pi-Kubernetes-Cluster-master/kubesetup
+cd ~/K8S-master/kubesetup
 
 echo -e "\nInstalling Flannel\n"
 
@@ -24,7 +24,7 @@ kubectl apply -f ./dashboard/dashboard-admin-user.yml
 kubectl apply -f ./dashboard/dashboard-admin-role-binding.yml
 
 ## Simplifies getting Kubernetes Dashboard Token
-cp ~/Raspberry-Pi-Kubernetes-Cluster-master/scripts/get-dashboard-token.sh ~/
+cp ~/K8S-master/scripts/get-dashboard-token.sh ~/
 sudo chmod +x ~/get-dashboard-token.sh
 
 # echo -e "\nInstalling Persistent Storage Support\n"
