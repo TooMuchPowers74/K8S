@@ -28,18 +28,18 @@ cd ~/
 
 curl -O -J -L https://github.com/TooMuchPowers74/K8S/archive/master.zip
 
-BOOTSTRAP_DIR=~/Raspberry-Pi-Kubernetes-Cluster-master
+BOOTSTRAP_DIR=~/K8S-master
 if [ -d "$BOOTSTRAP_DIR" ]; then
     echo -e "\nPermission required to remove existing Raspberry Pi Installation Bootstrap Directory\n"
-    sudo rm -r -f ~/Raspberry-Pi-Kubernetes-Cluster-master
+    sudo rm -r -f ~/K8S-master
 fi
 
-rm -r -f Raspberry-Pi-Kubernetes-Cluster-master
+rm -r -f K8S-master
 unzip -qq K8S-master.zip
 rm K8S-master.zip
 
 echo -e "\nSetting Execute Permissions for Installation Scripts\n"
-cd ~/Raspberry-Pi-Kubernetes-Cluster-master/scripts
+cd ~/K8S-master/scripts
 sudo chmod +x *.sh
 
 while true; do
