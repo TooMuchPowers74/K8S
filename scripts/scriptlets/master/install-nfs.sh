@@ -10,7 +10,7 @@ mkdir -p ~/nfsshare/mysql
 mkdir -p ~/nfsshare/notebooks
 mkdir -p ~/nfsshare/kuard
 
-cp -r ~/Raspberry-Pi-Kubernetes-Cluster-master/nginx/ ~/nfsshare/
+cp -r ~/K8S-master/nginx/ ~/nfsshare/
 
 # Change ownership recurse
 sudo chown -R nobody:nogroup /home/pi/nfsshare
