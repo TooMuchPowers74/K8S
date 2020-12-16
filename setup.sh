@@ -35,8 +35,8 @@ if [ -d "$BOOTSTRAP_DIR" ]; then
 fi
 
 rm -r -f Raspberry-Pi-Kubernetes-Cluster-master
-unzip -qq Raspberry-Pi-Kubernetes-Cluster-master.zip
-rm Raspberry-Pi-Kubernetes-Cluster-master.zip
+unzip -qq K8S-master.zip
+rm K8S-master.zip
 
 echo -e "\nSetting Execute Permissions for Installation Scripts\n"
 cd ~/Raspberry-Pi-Kubernetes-Cluster-master/scripts
