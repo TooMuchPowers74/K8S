@@ -26,7 +26,7 @@ echo -e "\n"
 
 cd ~/
 
-curl -O -J -L https://github.com/gloveboxes/Raspberry-Pi-Kubernetes-Cluster/archive/master.zip
+curl -O -J -L https://github.com/TooMuchPowers74/K8S/archive/master.zip
 
 BOOTSTRAP_DIR=~/Raspberry-Pi-Kubernetes-Cluster-master
 if [ -d "$BOOTSTRAP_DIR" ]; then
