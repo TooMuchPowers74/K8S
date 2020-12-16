@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPTS_DIR="~/Raspberry-Pi-Kubernetes-Cluster-master/scripts/scriptlets"
+SCRIPTS_DIR="~/K8S-master/scripts/scriptlets"
 kernel64bit=false
 ipaddress=''
 k8snodeNumber=''
@@ -142,16 +142,16 @@ remote_cmd  'sudo chmod +x ~/k8s-join-node.sh'
 
 echo "Downloading installation bootstrap"
 
-remote_cmd 'rm -r -f ~/Raspberry-Pi-Kubernetes-Cluster-master'
+remote_cmd 'rm -r -f ~/K8S-master'
 remote_cmd 'rm ~/master.zip'
 
-remote_cmd 'wget -q https://github.com/gloveboxes/Raspberry-Pi-Kubernetes-Cluster/archive/master.zip'
+remote_cmd 'wget -q https://github.com/TooMuchPowers74/K8S/archive/master.zip'
 remote_cmd 'unzip -qq ~/master.zip'
 remote_cmd 'rm ~/master.zip'
 
 
 echo -e "\nSetting Execution Permissions for installation scripts\n"
-remote_cmd 'sudo chmod +x ~/Raspberry-Pi-Kubernetes-Cluster-master/scripts/*.sh'
+remote_cmd 'sudo chmod +x ~/K8S-master/scripts/*.sh'
 remote_cmd "sudo chmod +x $SCRIPTS_DIR/common/*.sh"
 remote_cmd "sudo chmod +x $SCRIPTS_DIR/node/*.sh"
 
