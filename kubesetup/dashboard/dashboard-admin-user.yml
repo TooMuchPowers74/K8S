@@ -1,5 +1,12 @@
+#apiVersion: v1
+#kind: ServiceAccount
+#metadata:
+  #name: admin-user
+  #namespace: kube-system
+  
+# New ServiceAccount Definition  
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: admin-user
+  name: linuxsysadmins
   namespace: kube-system
