@@ -140,7 +140,7 @@ Ensure the Raspberry Pi to be configured as a **Kubernetes Master** is:
    > Note, as at July 2020 for [Raspberry Pi 3B and 3B+ CGroup support](https://github.com/raspberrypi/linux/issues/3644) is not included in the kernel. CGroups is required for Kubernetes. The workaround is to enable the 64bit kernel. You will be prompted to enable the 64Bit kernel. 
 
     ```bash
-    bash -c "$(curl https://raw.githubusercontent.com/gloveboxes/Raspberry-Pi-Kubernetes-Cluster/master/setup.sh)"
+    bash -c "$(curl https://raw.githubusercontent.com/TooMuchPowers74/K8S/master/setup.sh)"
     ```
 
 3. Select **M**aster set up.
@@ -168,7 +168,7 @@ Ensure the k8smaster and all the Raspberry Pis that will be configured are **pow
    > Note, as at July 2020 for [Raspberry Pi 3B and 3B+ CGroup support](https://github.com/raspberrypi/linux/issues/3644) is not included in the kernel. CGroups is required for Kubernetes. The workaround is to enable the 64bit kernel. You will be prompted to enable the 64Bit kernel. 
 
     ```bash
-    bash -c "$(curl https://raw.githubusercontent.com/gloveboxes/Raspberry-Pi-Kubernetes-Cluster/master/setup.sh)"
+    bash -c "$(curl https://raw.githubusercontent.com/TooMuchPowers74/K8S/master/setup.sh)"
     ```
 
 2. Select **N**ode set up.
