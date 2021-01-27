@@ -219,8 +219,9 @@ route add 192.168.100.0 mask 255.255.255.0 192.168.0.55
 ### macOS and Linux
 
 ```bash
-sudo /sbin/route add -net 192.168.100.0 -netmask 255.255.255.0 -gateway 192.168.100.235 ```
-netstat -nr 
+sudo /sbin/route add -net 192.168.100.0 -netmask 255.255.255.0 -gateway 192.168.100.235
+netstat -nr
+```
 
 ### Troubleshooting Worker Node DNS issues
 
